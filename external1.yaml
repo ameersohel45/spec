@@ -1,24 +1,13 @@
 components:
   schemas:
-    SearchRequest:
+    User:
       type: object
       properties:
-        intent:
-          type: object
-          properties:
-            item:
-              type: object
-              properties:
-                descriptor:
-                  type: object
-                  properties:
-                    name:
-                      type: string
-                  required:
-                    - name
-              required:
-                - descriptor
-          required:
-            - item
+        name:
+          type: string
+        email:
+          type: string
+          format: email
       required:
-        - intent
+        - name
+        - email
