@@ -10,7 +10,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: './external1.yaml#/components/schemas/User' # same repo, subfolder
+              $ref: 'https://raw.githubusercontent.com/ameersohel45/spec/refs/heads/main/external1.yaml#/components/schemas/User' # same repo, subfolder
       responses:
         '201':
           description: Created
